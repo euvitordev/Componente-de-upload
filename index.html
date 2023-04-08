@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Componente de upload</title>
+
+      <link rel="stylesheet" href="./css/style.css" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet"
+      />
+   </head>
+   <body>
+      <main>
+         <div class="container">
+            <label for="myfile" class="custom-file-upload">
+               <img src="./src/svgs/upload.svg" alt="" />
+               <h2>Importe seus arquivos</h2>
+               <p>Arraste ou clique para fazer upload</p>
+            </label>
+            <input type="file" id="myfile" name="myfile" />
+
+            <div class="files">
+               <!-- File 1 -->
+               <div id="file" class="file-progress">
+                  <div class="icon-file">
+                     <img
+                        src="./src/svgs/files-icon/file-progress.svg"
+                        alt=""
+                     />
+                  </div>
+                  <div class="content">
+                     <div class="header">
+                        <div class="title">
+                           <h3>Scann_158.pdf</h3>
+                           <p>30 MB / 74 MB</p>
+                        </div>
+                        <div class="cancel">
+                           <img src="./src/svgs/cancel.svg" alt="" />
+                        </div>
+                     </div>
+                     <div class="progress">
+                        <div class="loader"><div class="bar"></div></div>
+                        <p>46%</p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- File 2 -->
+               <div id="file" class="file-sucess">
+                  <div class="icon-file">
+                     <img src="./src/svgs/files-icon/file-sucess.svg" alt="" />
+                  </div>
+                  <div class="content">
+                     <div class="header">
+                        <div class="title">
+                           <h3>README.md</h3>
+                           <p>12 KB</p>
+                        </div>
+                     </div>
+                     <div class="progress">
+                        <div class="loader"><div class="bar"></div></div>
+                        <p>100%</p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- File 3 -->
+               <div id="file" class="file-erro">
+                  <div class="icon-file">
+                     <img src="./src/svgs/files-icon/file-erro.svg" alt="" />
+                  </div>
+                  <div class="content">
+                     <div class="header">
+                        <div class="title">
+                           <h3>picture1.jpeg</h3>
+                           <p>6.3 MB</p>
+                        </div>
+                        <div class="retry">
+                           <img src="./src/svgs/retry.svg" alt="" />
+                        </div>
+                     </div>
+                     <div class="progress">
+                        <div class="loader"><div class="bar"></div></div>
+                        <p>Erro</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+   </body>
+</html>
